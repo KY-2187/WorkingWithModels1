@@ -4,9 +4,11 @@
 </head>
 <body>
 	<form method="POST">
-		<input= type="text" placeholder='Enter a To-Do item' id='id_new_item'>
+		<input= type="text" placeholder='Enter a To-Do item' id='id_new_item' name='item_text'>
 		{% csrf_token %}
 	</form>
-	<ul id=task_list></ul>
+	<ul id=task_list>
+		<li>{{ new_task }}</li>
+	</ul>
 </body>
 </html>

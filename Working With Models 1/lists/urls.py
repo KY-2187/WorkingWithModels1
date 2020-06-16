@@ -1,6 +1,6 @@
 from django.conf.urls import urls
 
-from .views import HomeView, TaskListView, TaskCreateView
+from .views import HomeView, TaskListView, TaskCreateView, home_page
 
 urlpatterns = [
 	url(r'^$', HomeView.as_view(), name='home'),
